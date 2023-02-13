@@ -1,10 +1,7 @@
 import './App.css';
 import Cart from './pages/Cart';
 import MarketPlace from './pages/MarketPlace';
-//import Login from "./login/Login";
-//import Register from "./login/SignUp";
-//import Reset from "./login/ResetPassword";
-//import Dashboard from "./login/Dashboard";
+
 import {BrowserRouter as HashRouter, Routes, Route} from "react-router-dom"
 
 function App() {
