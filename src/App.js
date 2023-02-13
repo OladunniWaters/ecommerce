@@ -1,23 +1,21 @@
-import logo from './logo.svg';
 import './App.css';
+import Cart from './pages/Cart';
+import MarketPlace from './pages/MarketPlace';
+//import Login from "./login/Login";
+//import Register from "./login/SignUp";
+//import Reset from "./login/ResetPassword";
+//import Dashboard from "./login/Dashboard";
+import {BrowserRouter as HashRouter, Routes, Route} from "react-router-dom"
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="app">
+    <HashRouter>
+      <Routes>
+        <Route path='/' element={<MarketPlace />}/>
+        <Route path='/cart' element={<Cart />}/>
+      </Routes>
+      </HashRouter>
     </div>
   );
 }
